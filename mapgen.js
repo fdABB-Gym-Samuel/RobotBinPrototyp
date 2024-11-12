@@ -401,11 +401,9 @@ load_maze_btn.addEventListener("click", () => {
 
 const clear_btn = document.getElementById("clear-btn")
 clear_btn.addEventListener("click", () => {
-    console.log(document.getElementById("known").children)
     Array.from(document.getElementById("known").children).forEach((element) => {
         element.classList = "k"
         map_two.cords[element.id] = "k"
         
     })
-    console.log(map_two.cords)
 })
