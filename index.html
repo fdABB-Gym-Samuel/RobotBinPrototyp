@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <div id="input_field">
+            <div class="input_group">
+                <label for="wall_selector">Wall</label>
+                <input type="radio" id="wall_selector" name="paint_type" value="wall">
+            </div>
+            <div class="input_group">
+                <label for="bee_selector">Bee</label>
+                <input type="radio" id="bee_selector" name="paint_type" value="bee">
+            </div>
+            <div class="input_group">
+                <label for="goal_selector">Goal</label>
+                <input type="radio" id="goal_selector" name="paint_type" value="goal">
+            </div>
+            <div class="input_group">
+                <label for="eraser">Eraser</label>
+                <input type="radio" id="eraser_selector" name="paint_type" value="eraser">
+            </div>
+        </div>
+        <div id="maps">
+            <div class="map" id="unknown"></div>
+            <div id="button_group">
+                
+                <button id="play-pause-btn">Start Sim</button>
+                <button id="rerun-btn">Rerun Sim</button>
+                <button id="clear-btn">Clear Maze</button>
+                <button id="load-maze-btn">Load maze</button>
+                <input type="text" id="maze-input">
+            </div>
+            <div class="map" id="known"></div>
+        </div>
+    </div>
+    <script src="mapgen.js"></script>
+    <script src="bee.js"></script>
+</body>
+</html>

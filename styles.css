@@ -1,0 +1,75 @@
+#content{
+    display: flex;
+    flex-direction: row;
+}
+
+#maps{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100vh;
+    gap: 10px;
+    align-items: center;
+
+    /* width: 100vw; */
+}
+
+.map{
+    display: grid;
+    
+    height: 100%;
+    width: 92%;
+    background-color: white;
+    position: relative;
+    gap: 1px;
+}
+
+#input_field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 8%;
+}
+.string_container{
+    width: 60vw;
+    height: fit-content
+}
+
+
+.wall{
+    background-color: black !important;
+}
+.bee{
+    background-color: yellow !important;
+}
+.goal{
+    background-color: red !important;
+}
+/* .nothing-known{
+    background-color: lightgreen;
+}
+.nothing-unknown{
+    background-color: grey;
+} */
+.k{
+    background-color: lightgreen;
+}
+.u{
+    background-color: grey;
+}
+.path{
+    background-color: blue;
+}
+.traveled{
+    background-color: darkviolet;
+}
+#ghost_bee{
+    background-color: lightyellow;
+}
+.visible{
+    background-color: red !important;
+}
+/* #known{
+    background-color: green;
+} */
+
